@@ -8,6 +8,6 @@
 
 1.upto(100){
 	Invitation.create(email: Faker::Internet.email)
-
 	Library.create(name: Faker::Company.name, address: Faker::Address.street_address, phone: Faker::PhoneNumber.cell_phone)
+	Contact.create(email: Faker::Internet.email, message: Faker::Lorem.paragraph(2))
 }
