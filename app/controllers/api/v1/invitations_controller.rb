@@ -9,6 +9,13 @@ class Api::V1::InvitationsController < ApplicationController
   	@invitations = Invitation.all
     render json: @invitations
   end
+
+  def destroy
+    @invitation = Invitation.find(params[:id])
+    @invitation.destroy
+    render json: @invitation
+  end
+  
 	
 	private
 	
