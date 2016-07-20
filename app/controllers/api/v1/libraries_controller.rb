@@ -9,6 +9,23 @@ class Api::V1::LibrariesController < ApplicationController
   	@libraries = Library.all
     render json: @libraries
   end
+
+  def show
+    @library = Library.find(params[:id])
+    render json: @library
+  end
+
+  def update
+    @library = Library.find(params[:id])
+    @library.update_attributes(library_params)
+    render json: @library
+  end
+
+  def destroy
+    @library = Library.find(params[:id])
+    @library.destroy
+    render json: @library
+  end
 	
 	private
 	
