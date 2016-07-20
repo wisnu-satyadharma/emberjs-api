@@ -6,7 +6,7 @@ class Api::V1::ContactsController < ApplicationController
   end
 
   def index  	
-  	@contacts = Invitation.all
+  	@contacts = Contact.all
     render json: @contacts
   end
 	
