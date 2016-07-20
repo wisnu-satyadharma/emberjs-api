@@ -6,7 +6,8 @@ class Api::V1::InvitationsController < ApplicationController
   end
 
   def index  	
-  	
+  	@invitations = Invitation.all
+    render json: @invitations
   end
 	
 	private
