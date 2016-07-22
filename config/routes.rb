@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   		resources :invitations
   		resources :libraries
   		resources :contacts
+  		resources :authors
+  		resources :books
   	end
 	end
 end
