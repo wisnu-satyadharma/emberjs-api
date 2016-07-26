@@ -25,6 +25,8 @@ library_ids = Library.all.map(&:id)
 	)
 }
 
+User.create! email: "user@example.com", password: "password"
+
 
 
 

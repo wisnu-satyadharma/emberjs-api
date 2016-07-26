@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', :require => 'rack/cors'
 gem "active_model_serializers", github: "rails-api/active_model_serializers"
 gem 'faker'
+gem 'devise'
 
 
 group :development, :test do
